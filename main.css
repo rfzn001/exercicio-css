@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body > header {
+    background-color: #2f3640;
+    padding: 16px 0;
+    color: #f5f6fa;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header li {
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 16px;
+}
+
+header li a {
+    color: #f5f6fa;
+    text-decoration:none;
+}
+.container {
+    max-width: 1366px; /* Substituindo "width" por "max-width" para tornar o layout responsivo */
+    margin: 0 auto;
+    padding: 0 16px; /* Adicionando um espaçamento interno para evitar que o conteúdo alcance as bordas */
+}
+
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.articles article img {
+    /* height: 180px; */
+    width: 100%; /* Definindo a largura da imagem para ocupar todo o espaço disponível */
+    object-fit: cover; /* Garantindo que a imagem seja redimensionada para preencher o espaço sem distorção */
+}
+
+.articles article {
+    width: 30%;
+    margin-bottom: 16px; /* Movendo a margem inferior aqui para evitar espaçamento duplo */
+    padding: 16px; /* Adicionando um espaçamento interno */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adicionando uma sombra leve para cada artigo */
+}
+
+section {
+    padding: 16px 0;
+}
+
+section h2,
+.articles article h3 {
+    margin-bottom: 16px;
+}
+
+.articles article h3 {
+    margin-top: 8px; 
+    margin-bottom: 8px;
+}
+
+.articles article a {
+    background-color: blue;
+    color: #fff;
+    padding: 8px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.articles article a:hover {
+    text-decoration: underline;
+}
+
+.articles article p,
+.articles article a {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.articles article h3 {
+    font-size: 24px;
+}
+
+section h2 {
+    font-size: 32px;
+}
+
+#esportes {
+    background-color: rgba(0, 255, 0, 0.1);
+}
+
+#esportes .articles article a {
+    background-color: #009432;
+}
+
+#economia {
+    background-color: #f8f59f;
+}
+
+#economia .articles article a {
+    background-color: #ff9f10;
+}
+
+#Entretenimento {
+    background-color: azure;
+}
+
+#Tecnologia {
+    background-color: chartreuse;
+}
